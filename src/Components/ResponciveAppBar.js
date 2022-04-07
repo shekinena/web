@@ -74,7 +74,7 @@ const ResponsiveAppBar = () => {
 								}}
 							>
 								{pagesReverse.map((page) => (
-									<NavLink to={`web/${page}`}>
+									<NavLink to={`/${page}`}>
 										<MenuItem key={page} onClick={handleCloseNavMenu}>
 											<Typography textAlign="center">{page}</Typography>
 										</MenuItem>
@@ -93,7 +93,7 @@ const ResponsiveAppBar = () => {
 						</Typography>
 						<Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' },flexDirection: 'row-reverse'}}>
 							{pages.map((page) => (
-								<NavLink to={`web/${page}`}>
+								<NavLink to={`/${page}`}>
 									<Button
 										
 										key={page}
