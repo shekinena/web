@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/web/static/media/sample.c7d354ff.pdf"
   },
   {
-    "revision": "e11160954267ccf344cf11799fd7ea5e",
+    "revision": "620becc7ec660b9ff9149bfd5f4e93b9",
     "url": "/web/index.html"
   }
 ];
