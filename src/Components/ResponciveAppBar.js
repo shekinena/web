@@ -11,8 +11,8 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { NavLink } from 'react-router-dom'
 
-const pages = ['Contact', 'Publications', 'Thesis', 'About', 'Home'];
-const pagesReverse = [ 'Home', 'About', 'Thesis', 'Publications', 'Contact'];
+const pages = ['contact', 'publications', 'thesis', 'about', 'home'];
+const pagesReverse = [ 'home', 'about', 'thesis', 'publications', 'contact'];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -74,7 +74,7 @@ const ResponsiveAppBar = () => {
 								}}
 							>
 								{pagesReverse.map((page) => (
-									<NavLink to={`/${page}`}>
+									<NavLink to={`/web/${page}`}>
 										<MenuItem key={page} onClick={handleCloseNavMenu}>
 											<Typography textAlign="center">{page}</Typography>
 										</MenuItem>
@@ -93,7 +93,7 @@ const ResponsiveAppBar = () => {
 						</Typography>
 						<Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' },flexDirection: 'row-reverse'}}>
 							{pages.map((page) => (
-								<NavLink to={`/${page}`}>
+								<NavLink to={`/web/${page}`}>
 									<Button
 										
 										key={page}
