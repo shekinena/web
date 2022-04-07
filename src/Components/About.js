@@ -15,7 +15,7 @@ const About = () => {
                     display: 'block'
                   }}>
           <div className='about-wide-cover'>
-            <img className='about-wide-image' src='./mali-aigas-wide.jpg' alt='goat hair'></img>
+            <img className='about-wide-image' src='../../public/mali-aigas-wide.jpg' alt='goat hair'></img>
           </div>
           
           <div className='about-main'>
