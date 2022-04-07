@@ -23,7 +23,7 @@ ReactDOM.render(
       <Route path="about" element={<About />} />
       <Route path="web/about" element={<About />} />
       <Route path="thesis" element={<Thesis />} />
-      <Route path="we/thesis" element={<Thesis />} />
+      <Route path="web/thesis" element={<Thesis />} />
       <Route path="publications" element={<Publication />} />
       <Route path="web/publications" element={<Publication />} />
       <Route path="contact" element={<Contact />} />
