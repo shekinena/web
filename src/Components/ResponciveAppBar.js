@@ -42,7 +42,7 @@ const ResponsiveAppBar = () => {
 							borderBottom: '2px solid black'
 						 }}
 					>
-						<a href='/'>SHEKINE NAINTI</a>
+						<a href='/'>SHEKINE NAINTI v.0.0.1</a>
 					</Typography>
 					<Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }}}>
 							<IconButton
@@ -74,7 +74,7 @@ const ResponsiveAppBar = () => {
 								}}
 							>
 								{pagesReverse.map((page) => (
-									<NavLink to={`/web/${page}`}>
+									<NavLink to={`/${page}`}>
 										<MenuItem key={page} onClick={handleCloseNavMenu}>
 											<Typography textAlign="center">{page}</Typography>
 										</MenuItem>
@@ -93,7 +93,7 @@ const ResponsiveAppBar = () => {
 						</Typography>
 						<Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' },flexDirection: 'row-reverse'}}>
 							{pages.map((page) => (
-								<NavLink to={`/web/${page}`}>
+								<NavLink to={`/${page}`}>
 									<Button
 										
 										key={page}

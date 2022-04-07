@@ -8,7 +8,7 @@ const Header = () => {
     <header className='logo'>
         <ul>
           <li style={{borderBottom: 'solid 2px',
-                    fontSize:'25px',}} >Shekine Nainti</li>
+                    fontSize:'25px',}} >Shekine Nainti </li>
         </ul>
 
         <Nav />

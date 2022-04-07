@@ -33,8 +33,8 @@ const About = () => {
             <img className='about-more-img' src='./art-01.jpg' alt='Something'></img>
             <label> Thesis</label>
             <label> Progetto per VIII simposio internazionale di<br></br> scultura su basalto, Sicilia</label>
-            <button className='button-animation'>More</button>
-            <button className='button-animation'>More</button>
+            <button className='button-animation'>Read More</button>
+            <button className='button-animation'>Read More</button>
           </section>
 
       </main>

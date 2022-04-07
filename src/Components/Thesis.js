@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from "react";
 import SinglePage from './pdf/single-page';
-import samplePDF from './sample.pdf'
+import samplePDF from '../Components/pdf/sample.pdf'
 
 const Thesis = () => {
   const [title] = useState('Shekine | Thesis');

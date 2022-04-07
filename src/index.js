@@ -15,16 +15,16 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
     <ResponsiveAppBar />
-      <Routes>
-        <Route path="web/" element={< Home />} />
-        <Route path="web/home" element={< Home />} />
-        <Route path="web/about" element={<About />} />
-        <Route path="web/thesis" element={<Thesis />} />
-        <Route path="web/publications" element={<Publication />} />
-        <Route path="web/contact" element={<Contact />} />
-        <Route path="*" element={<Missing />} status={404} />
-      </Routes>
-      <Footer />
+    <Routes>
+      <Route path="" element={< Home />} />
+      <Route path="home" element={< Home />} />
+      <Route path="about" element={<About />} />
+      <Route path="thesis" element={<Thesis />} />
+      <Route path="publications" element={<Publication />} />
+      <Route path="contact" element={<Contact />} />
+      <Route path="*" element={<Missing />} status={404} />
+    </Routes>
+    <Footer />
     </Router>
 
   </React.StrictMode>,

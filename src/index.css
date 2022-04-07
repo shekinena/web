@@ -227,12 +227,12 @@ code {
   }
 
   .contact-form{
-    text-align: center;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
   }
     
   .contact-fields{
-    background-color: #E8E8E8;
+    /* background-color: #E8E8E8; */
     width: 250px;
   }
 
@@ -300,7 +300,32 @@ code {
     width: 90%;
     border: 1px solid #888;
   }
+  .small-screen-thesis {
+    display: none;
+  }
 
+  @media (max-width: 450px) {
+    .thesis-document {
+      display: none;
+    }
+    .small-screen-thesis {
+      display: grid;
+    }
+  }
 
+ .navigate-buttons-h4 {
+   text-align: center;
+ }
+
+ .navigate-buttons-div {
+   text-align: center;
+
+ }
+
+ .thesis-navigate-button { 
+  text-align: center;
+  margin: 15px;
+  width: 20%;
+ }
 
   /*# sourceMappingURL=index.css.map */

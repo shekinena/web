@@ -27,7 +27,7 @@ const Contact = () => {
   }, [title]);
 
   return (
-    <main>
+    <main style={{textAlign:'center'}}>
       <div className='about-wide-cover'>
         <img className='about-wide-image' src='./mali-aigas-wide.jpg' alt='goat hair'></img>
       </div>
@@ -44,32 +44,35 @@ const Contact = () => {
         >Contact Form</h1>
       </div>
       
-      <ThemeProvider theme={theme}>
-        <form className='contact-form'
-              style={{margin:'25px 85px 75px 100px'}} >
-          <div className="input-div">
-            <TextField sx={{ input: { color: 'black' } }} className='contact-fields' id="outlined-basic" label="Name" variant="outlined" />
-          </div>
-          <div className="input-div">
-            <TextField color = 'primary' className='contact-fields' id="outlined-basic" label="E-mail" variant="outlined" />
-          </div>
-          <div className="input-div">       
-            <TextField style={{color:'black'}} className='contact-fields'
-              id="filled-multiline-static"
-              label="Message"
-              multiline
-              rows={5}
-              // defaultValue="Default Value"
-              variant="outlined"
-            />
-          </div>
-          <div style={{margin: '0 auto'}}>
-            <Button disabled style={{width:'100px', color:'black', border:'1px solid black', borderRadius:'5px'}} variant="outlined">SEND</Button>
-          </div>
-          
-        </form>
-    
-      </ThemeProvider>
+      <div className='contact-form'>
+        <ThemeProvider theme={theme}>
+          <form
+                style={{margin:'25px 85px 75px 100px'}} >
+            <div className="input-div">
+              <TextField sx={{ input: { color: 'black' } }} className='contact-fields' id="outlined-basic" label="Name" variant="outlined" />
+            </div>
+            <div className="input-div">
+              <TextField color = 'primary' className='contact-fields' id="outlined-basic" label="E-mail" variant="outlined" />
+            </div>
+            <div className="input-div">       
+              <TextField style={{color:'black'}} className='contact-fields'
+                id="filled-multiline-static"
+                label="Message"
+                multiline
+                rows={5}
+                // defaultValue="Default Value"
+                variant="outlined"
+              />
+            </div>
+            <div style={{margin: '0 auto'}}>
+              <Button disabled style={{width:'100px', color:'black', border:'1px solid black', borderRadius:'5px'}} variant="outlined">SEND</Button>
+            </div>
+            
+          </form>
+      
+        </ThemeProvider>
+      </div>
+      
     </main>
   )
 }
