@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Document, Page } from "react-pdf";
+import { Document,  Page } from "react-pdf";
 // import {Link} from 'react-router-dom'
-
+ 
  function SinglePage(props) {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1); //setting 1 to show fisrt page
@@ -25,17 +25,19 @@ import { Document, Page } from "react-pdf";
 
   const { pdf } = props;
 
+
   return (
-    <main>
-      <container >
-        <div className='thesis-document'>
+    <main style={{width:'70vw', textAlign:'center'}}>
+      <container  >
+        <div className='thesis-document-pdf'>
           <Document
             file={pdf}
-            options={{ workerSrc: "/pdf.worker.js" }}
+            options={{ workerSrc: "/pdf.worker.js", width:'100' }}
             onLoadSuccess={onDocumentLoadSuccess}
           >
-            <Page pageNumber={pageNumber} />
+            <Page width= '550' pageNumber={pageNumber}/>
           </Document>
+
         </div>
 
       </container>

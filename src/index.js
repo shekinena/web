@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import { HashRouter as Router, Route, Routes} from 'react-router-dom'
 import Missing from './Components/Missing';
 import About from './Components/About'
 import Footer from './Components/Footer'
@@ -13,7 +13,7 @@ import ResponsiveAppBar from './Components/ResponciveAppBar'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router basename='/web'>
+    <Router>
       <ResponsiveAppBar />
       <Routes>
         <Route path="/" element={< Home />} />

@@ -304,7 +304,15 @@ code {
     display: none;
   }
 
+  .thesis-document-pdf{
+    display: flex;
+    justify-content: space-around;
+
+  }
   @media (max-width: 450px) {
+    .thesis-document-pdf{
+      display: none;
+    }
     .thesis-document {
       display: none;
     }
