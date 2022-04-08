@@ -40,14 +40,7 @@ code {
   /* background-color: aqua; */
   }
   
-  .logo {
-      background-color: none;
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: space-around;
-      padding: 24px 50px;
-  
-  }
+
   
   
   .carousel{
@@ -143,14 +136,13 @@ code {
   
   
   ul{
-  flex: 50%;
   list-style: none;
   display: flex;
   padding: 0;
   }
   
   li{
-  padding: 10px;
+    padding: 10px 10px 10px 10px;
   }
   
   
@@ -305,6 +297,7 @@ code {
   }
 
   .thesis-document-pdf{
+    z-index: 10;
     display: flex;
     justify-content: space-around;
 

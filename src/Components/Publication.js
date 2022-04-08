@@ -10,18 +10,22 @@ const Publication = () => {
   }, [title]);
 
     return (
-      <main style={{display:'flex',
+      <main style={{textAlign:'center',
+                    display:'block',
                     justifyContent:'space-around'
                   }}>
-          <h1 style={{position:'absolute', paddingTop:'50px'}}>Page Under Construction</h1>
+          <h1 style={{paddingTop:'50px', fontSize: '1rem'}}>Page Under Construction</h1>
+          <div style={{maxWidth:'80vw', margin:'0 auto'}}>
           <img 
             src='./backround.jpg'
             alt='backround'
-            style={{width:'80vw',
+            style={{width:'100%',
                     }}
           >
 
           </img>
+          </div>
+
       </main>
     )
   }

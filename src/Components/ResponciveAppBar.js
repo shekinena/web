@@ -27,7 +27,7 @@ const ResponsiveAppBar = () => {
   };
 	
   return (
-    <AppBar elevation={0} position="static" style={{ background: 'white', marginBottom:'25px' }}>
+    <AppBar elevation={0} position="fixed" style={{ background: 'white', marginBottom:'25px' }}>
 			<Container maxWidth="xl">
 				<Toolbar disableGutters>
 					<Typography

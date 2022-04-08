@@ -13,7 +13,8 @@ const Thesis = () => {
 
     return (
       <main style={{display:'flex',
-                      justifyContent:'space-around'
+                      justifyContent:'space-around',
+                      zIndex: '-1'
                     }}>
         <SinglePage pdf={samplePDF} />
       </main>

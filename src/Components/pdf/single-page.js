@@ -69,7 +69,8 @@ import { Document,  Page } from "react-pdf";
         <img
           
           style={{
-            width:'60vw',
+            marginTop:'10px',
+            width:'100%',
             border:'1px solid #555'
           }}
           src="./corpus-cover.png"
