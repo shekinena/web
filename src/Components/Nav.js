@@ -65,7 +65,7 @@ function Nav() {
             .navigation ul li{
               height:100%
                 list-style-type: none;
-                padding-right: 20px;
+                padding-right: 10px;
 
             }
 
