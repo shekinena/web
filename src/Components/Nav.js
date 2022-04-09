@@ -8,13 +8,10 @@ import './Nav.css'
 function Nav() {
 
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
+  const toggleHamburger = () =>{
+      setHamburgerOpen(!hamburgerOpen)
 
-    const toggleHamburger = () =>{
-        setHamburgerOpen(!hamburgerOpen)
-        // if (hamburgerOpen === true) {
-        //   document.root.style.overflow = 'hidden'
-        // }
-    }
+  }
 
   return (
     <div>
@@ -77,6 +74,9 @@ function Nav() {
             } 
 
             @media (max-width: 767px){
+                body {
+                  overflow: ${hamburgerOpen ? 'hidden' : 'none'};;
+                }
                 .hamburger{
                     margin-left: 10px;
                     width: 2rem;
@@ -91,6 +91,7 @@ function Nav() {
                 }
 
                 .navigation {
+                  z-index: +10
                   justify-content: space-between;
                   flex-direction: row-reverse;
                 }
@@ -102,6 +103,7 @@ function Nav() {
                     width: 100vw;
                     margin-top: 50px;
                     position: fixed;
+                    z-index: +10
                 }
             }
             

@@ -9,14 +9,12 @@ import Home from './Components/Home'
 import Thesis from './Components/Thesis'
 import Publication from './Components/Publication'
 import Contact from './Components/Contact'
-import ResponsiveAppBar from './Components/ResponciveAppBar'
 import Nav from './Components/Nav';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Nav />
-      {/* <ResponsiveAppBar /> */}
       <Routes>
         <Route path="/" element={< Home />} />
         <Route path="home" element={< Home />} />
